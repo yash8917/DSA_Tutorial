@@ -23,7 +23,5 @@ public class Element_Exist_InString {
         String str="Welcome";
         char target='o';
         System.out.println(linearSearch(str,target));
-
-
     }
 }
