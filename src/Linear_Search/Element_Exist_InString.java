@@ -5,8 +5,14 @@ public class Element_Exist_InString {
         if (str.length() == 0) {
             return false;
         }
-        for (int index = 0; index < str.length(); index++) {
-            if (target == str.charAt(index)) {
+//        for (int index = 0; index < str.length(); index++) {
+//            if (target == str.charAt(index)) {
+//                return true;
+//            }
+//        }
+        //instead of this using for each loop
+        for (char ch:str.toCharArray()) {
+            if(ch==target){
                 return true;
             }
         }
