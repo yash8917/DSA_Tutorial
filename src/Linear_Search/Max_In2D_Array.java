@@ -24,7 +24,7 @@ public class Max_In2D_Array {
             }
         }
         return maxval;
-        //----->Use of enhance for loop
+        //----->  Use of enhance for loop
 //for (int[] ints : arr) {
 //            for (int element : ints) {
 //
