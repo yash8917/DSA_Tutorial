@@ -10,6 +10,7 @@ public class Element_Exist_InString {
 //                return true;
 //            }
 //        }
+        
         //instead of this using for each loop
         for (char ch:str.toCharArray()) {
             if(ch==target){
