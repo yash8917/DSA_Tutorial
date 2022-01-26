@@ -23,6 +23,7 @@ public class Array_Input_Output {
         for (int res:arr) {
             System.out.print(res+" \n");
         }
+        
         //3 rd way to print the array using array toSting method
         System.out.print("Array is :\n");
         System.out.print(Arrays.toString(arr));
