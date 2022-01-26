@@ -12,7 +12,7 @@ public class Element_Exist_InArray {
         }
         return -1;
     }
-    
+
     public static void main(String[] args) {
         int[] arr = {12, 34, 5, 23, 10, 24, 13};
         int target = 10;
