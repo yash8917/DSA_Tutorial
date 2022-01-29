@@ -3,7 +3,7 @@ package Binary_Search;
 public class Find_The_Target {
     public static void main(String[] args) {
         int[] arr={1 , 5, 7, 9,16,19,23,34,45,67,87,89};
-        int target=67;
+        int target=5;
         int ans=search1d(arr,target);
         System.out.println(ans);
     }
