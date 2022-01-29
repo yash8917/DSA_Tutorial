@@ -12,7 +12,6 @@ public class Find_The_Target {
         int end = arr.length -1;
         //Middle of the array
 //        int mid=(start+end) / 2; (This my possible exeed the Range of the integer
-
         while (start <= end){
             //        int mid=(start+end) / 2; (This my possible exeed the Range of the integer
             int mid=start + (end - start) / 2;
