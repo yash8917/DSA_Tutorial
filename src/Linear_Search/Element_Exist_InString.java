@@ -18,7 +18,6 @@ public class Element_Exist_InString {
         }
         return false;
     }
-
     public static void main(String[] args) {
         String str="Welcome";
         char target='o';
