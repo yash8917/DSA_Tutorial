@@ -7,7 +7,6 @@ public class Find_The_Target {
         int ans=search1d(arr,target);
         System.out.println(ans);
     }
-
     static int search1d(int[] arr , int target){
         int start=0;
         int end = arr.length -1;
@@ -19,6 +18,7 @@ public class Find_The_Target {
             if (target < arr[mid]){
                 end = mid - 1;
             }
+
             else if (target >arr[mid]){
                 start = mid + 1;
             }else {
