@@ -28,6 +28,7 @@ public class Flower {
             ar[i].price = sc.nextFloat();
         }
     }
+
     public void display()                                    //Method For Display Values from the Array
     {
         System.out.println("Flower Details:");
