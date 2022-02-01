@@ -17,6 +17,7 @@ public class Flower {
     }
     public void setvalues()                               //Method for set values in the Non-Primitive Array Flower
     {
+
         ar = new Flower[5];
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter FlowerName, Number of Petals and Prices of Flowers:");
