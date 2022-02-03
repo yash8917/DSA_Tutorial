@@ -6,7 +6,6 @@ public class Ceiling_Of_Number {
         int target=15;
         int ans= ceiling(arr,target);
         System.out.println("The index of Ceiling No: "+ans);
-
     }
     static int ceiling(int[] arr , int target){
         int start=0;
