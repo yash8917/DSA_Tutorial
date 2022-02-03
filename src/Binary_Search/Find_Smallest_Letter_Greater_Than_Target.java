@@ -1,5 +1,7 @@
 package Binary_Search;
-//Given a characters array letters that is sorted in non-decreasing order and a character target, return the smallest character in the array that is larger than target.
+//Given a characters array letters that is sorted in non-decreasing
+// order and a character target, return the smallest character
+// in the array that is larger than target.
 //
 //        Note that the letters wrap around.
 //
