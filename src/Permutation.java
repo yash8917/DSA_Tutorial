@@ -8,6 +8,7 @@
 // bca
 // cab
 // cba
+
     public class Permutation {
         public static void ans(String inp, String ans)
         {
