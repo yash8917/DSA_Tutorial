@@ -10,6 +10,7 @@ class Deletion_of_Array {
 //        //it don't override the value
 //        i.remove(0);//it also shift the index 1 to index 0.
 //        System.out.println(i);
+
         int arr[]={10,20,30,40,50};
         int index=1;
         int i=0;
