@@ -28,7 +28,6 @@ public class Ceiling_Of_Number {
                 return mid;
             }
         }
-
         return start;
     }
 }
