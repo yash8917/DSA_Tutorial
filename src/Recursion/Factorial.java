@@ -3,7 +3,6 @@ package Recursion;
 import java.util.Scanner;
 
 public class Factorial {
-
     public static int fact(int n){
         //Base case-This is called Head Recursion
         if( n== 1 ){
