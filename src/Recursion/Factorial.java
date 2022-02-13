@@ -28,3 +28,7 @@ public class Factorial {
         System.out.println(fact(n));
     }
 }
+/* how to identify which type of recursion in the code-
+In Head recursion there is some statement after the recursive call
+but In Tail recursion there is no any statement after the recursive call.
+ */
