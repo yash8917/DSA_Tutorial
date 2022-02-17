@@ -21,7 +21,6 @@ public class Basic_LinkedList {
         n3.next=n4;
         return n1;
     }
-
     public static void display(Node temp){
         System.out.println("The values of Linked List is: ");
         System.out.println(temp.data);
