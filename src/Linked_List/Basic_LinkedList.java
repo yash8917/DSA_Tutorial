@@ -1,4 +1,5 @@
 package Linked_List;
+
 class Node<I extends Number> {
     int data;
     Node<Number> next;
