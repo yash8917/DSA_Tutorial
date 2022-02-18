@@ -10,7 +10,7 @@ public class Array_Input_Output {
         for (int i = 0; i < arr.length; i++) {
             arr[i]= s.nextInt();
         }
-        
+       
     }
     public static void main(String[] args) {
         Array_Input_Output obj=new Array_Input_Output();
