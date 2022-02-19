@@ -2,7 +2,7 @@ package Linked_List;
 
 class Node{
     int data;
-    Node next;
+    Node next;// called the self Refrential Variable
     Node(int data){
         this.data=data;
     }
