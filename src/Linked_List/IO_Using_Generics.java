@@ -24,9 +24,9 @@ public class IO_Using_Generics {
         return n1;
     }
     public static void display(Node1 temp){
+        System.out.println(temp.data);
         System.out.println(temp.next.data);
         System.out.println(temp.next.next.data);
-        System.out.println(temp.next.next.next.data);
         System.out.println(temp.next.next.next.data);
     }
 }
