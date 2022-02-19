@@ -1,8 +1,8 @@
 package Linked_List;
 
-class Node<I extends Number> {
+class Node{
     int data;
-    Node<Integer> next;
+    Node next;
     Node(int data){
         this.data=data;
     }
@@ -12,7 +12,7 @@ public class Basic_LinkedList {
         Node head=CreatLinkedList();
         display(head);
     }
-    public static Node <Integer> CreatLinkedList(){
+    public static Node  CreatLinkedList(){
         Node n1=new Node(3);
         Node n2=new Node(4);
         Node n3=new Node(5);
