@@ -2,7 +2,7 @@ package Linked_List;
 
 class Node<I extends Number> {
     int data;
-    Node<Number> next;
+    Node<Integer> next;
     Node(int data){
         this.data=data;
     }
