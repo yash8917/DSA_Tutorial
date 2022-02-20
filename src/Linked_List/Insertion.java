@@ -8,6 +8,7 @@ class Node6{
 }
 public class Insertion {
    static Node6 head;
+   //This is the insert method in the last indext
     public static Node6 insert(){
         Node6 n1=new Node6(100);
         if(head == null){
@@ -32,9 +33,21 @@ public class Insertion {
             }
         }
     }
+    public static  Node6 atBegginigInsert(){
+        Node6 n1=new Node6(300);
+        Node6 n2=new Node6(200);//This is the element which i want to store in the first index
+        if(head==null){
+            head=n1;
+        }
+        n2.next=head;
+        head=n2;
+        return n2;
+    }
 
     public static void main(String[] args) {
         Node6 ans=insert();
+        Node6 ans2=atBegginigInsert();
+        display(ans2);
         display(ans);
     }
 }
