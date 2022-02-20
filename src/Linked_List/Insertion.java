@@ -33,6 +33,7 @@ public class Insertion {
             }
         }
     }
+
     public static  Node6 atBegginigInsert(){
         Node6 n1=new Node6(300);
         Node6 n2=new Node6(200);//This is the element which i want to store in the first index
