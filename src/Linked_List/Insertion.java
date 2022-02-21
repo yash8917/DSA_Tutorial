@@ -43,7 +43,6 @@ public class Insertion {
         head=n2;
         return n2;
     }
-
     public static void main(String[] args) {
         Node6 ans=insert();
         Node6 ans2=atBegginigInsert();
