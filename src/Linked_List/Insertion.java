@@ -6,6 +6,7 @@ class Node6{
         this.data=data;
     }
 }
+
 public class Insertion {
    static Node6 head;
    //This is the insert method in the last indext
