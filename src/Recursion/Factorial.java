@@ -9,9 +9,9 @@ public class Factorial {
             return 1;
         }
         //recursive call with smaller value
-        int recAns=fact(n-1);
-        int myAns=n*recAns;
-        return myAns;
+//        int recAns=fact(n-1);
+//        int myAns=n*recAns;
+        return n * fact(n-1);
     }
 //    //2nd method Approach is the Tail Recursion
 //    public static void fact(int n, int ans){
