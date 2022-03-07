@@ -4,13 +4,15 @@ import java.util.Arrays;
 
 public class Bubble_Short {
     public static void main(String[] args) {
-    int[] arr={5, 4, 3, 2, 1};
+    int[] arr={1,2,3,4,5};
     bubbleShort(arr);
     System.out.println(Arrays.toString(arr));
     }
     static public void bubbleShort(int[] arr){
+        boolean swap;
         //this loop runs for i-th pass
         for (int i = 0; i < arr.length; i++) {
+            swap=false;
             //this loop runs for the n-th element of the i-th pass (for swift the largest element in the end of the index
             for (int j = 1; j < arr.length-i ; j++) {
                 //check the condition for the greater then the privious element
@@ -23,7 +25,11 @@ public class Bubble_Short {
                     arr[j]=arr[j]^arr[j-1];
                     arr[j-1]=arr[j]^arr[j-1];
                     arr[j]=arr[j]^arr[j-1];
+                    swap=true;
                 }
+            }
+            if (swap==false){
+                break;
             }
         }
     }
