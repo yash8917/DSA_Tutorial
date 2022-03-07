@@ -1,5 +1,4 @@
 package Shorting;
-
 import java.util.Arrays;
 
 public class Bubble_Short {
