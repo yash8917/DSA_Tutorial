@@ -2,6 +2,7 @@ package Shorting;
 import java.util.Arrays;
 
 public class Bubble_Short {
+
     public static void main(String[] args) {
     int[] arr={1,2,3,4,5};
     bubbleShort(arr);
