@@ -28,7 +28,7 @@ public class Bubble_Short {
                     swap=true;
                 }
             }
-            if (swap==false){
+            if (swap==false){   //if(!swap)
                 break;
             }
         }
