@@ -13,7 +13,7 @@ public class Bubble_Short {
         //this loop runs for i-th pass
         for (int i = 0; i < arr.length; i++) {
             swap=false;
-            //this loop runs for the n-th element of the i-th pass (for swift the largest element in the end of the index
+            //this loop runs for the n-th element of the i-th pass (for swift the largest element in the end of the index)
             for (int j = 1; j < arr.length-i ; j++) {
                 //check the condition for the greater then the privious element
                 if(arr[j] < arr[j-1]){
