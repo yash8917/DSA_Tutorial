@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class Bubble_Short {
 
     public static void main(String[] args) {
-    int[] arr={1,2,3,4,5};
+    int[] arr={1,22,13,44,25};
     bubbleShort(arr);
     System.out.println(Arrays.toString(arr));
     }
