@@ -7,10 +7,28 @@ import java.util.Scanner;
 public class Shorting_Menu {
     public static void main(String[] args) {
         int[] arr={17,23,11,10,3,9};
-//       bubbleSort(arr);
-        selectionSort(arr);
-        System.out.println(Arrays.toString(arr));
+        Scanner sc=new Scanner(System.in);
+        System.out.println("    ..Wellcome to the Sorting Menu..");
+        System.out.println("Enter the Sort Method :-\n1. Bubble Sort\n2. Selection Sort");
+        int n=sc.nextInt();
+        switch (n){
+            case 1:
+                bubbleSort(arr);
+                System.out.println("After Apply the Bubble Sort the Array is:-");
+                System.out.println(Arrays.toString(arr));
+                break;
+            case 2:
+                selectionSort(arr);
+                System.out.println("After Apply the Selection Sort the Array is:-");
+                System.out.println(Arrays.toString(arr));
+                break;
+            default:
+                System.out.print("You entered a wrong choice. ");
+        }
+
     }
+//    ------------------------------------------------------------------------------
+    // Selection Sort
     public static void selectionSort(int[] arr){
         for (int i = 0; i <arr.length-1 ; i++) {
             int min =i;
@@ -24,6 +42,8 @@ public class Shorting_Menu {
             }
         }
     }
+//    -------------------------------------------------------------------------------
+//    Bubble Sort
     public static void bubbleSort(int[] arr){
         for (int i = 0; i < arr.length ; i++) {
             for (int j = 1; j < arr.length-i; j++) {
