@@ -23,7 +23,7 @@ public class Shorting_Menu {
                 System.out.println(Arrays.toString(arr));
                 break;
             default:
-                System.out.print("You entered a wrong choice. ");
+                System.out.print("You entered a wrong choice.");
         }
 
     }
