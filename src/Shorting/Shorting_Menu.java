@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class Shorting_Menu {
     public static void main(String[] args) {
-        int[] arr={17,23,11,10,3,9};
+        int[] arr={-17,-23,-20,0,11,10,3,9};
         Scanner sc=new Scanner(System.in);
         System.out.println("    ..Wellcome to the Sorting Menu..");
-        System.out.println("Enter the Sort Method :-\n1. Bubble Sort\n2. Selection Sort");
+        System.out.println("Enter the Sort Method :-\n1. Bubble Sort\n2. Selection Sort\n3.Insertion Sort");
         int n=sc.nextInt();
         switch (n){
             case 1:
@@ -22,6 +22,10 @@ public class Shorting_Menu {
                 System.out.println("After Apply the Selection Sort the Array is:-");
                 System.out.println(Arrays.toString(arr));
                 break;
+            case 3:
+                insertionSort(arr);
+                System.out.println("After Apply the Insertion Sort the Array is:-");
+                System.out.println(Arrays.toString(arr));
             default:
                 System.out.print("You entered a wrong choice.");
         }
@@ -52,8 +56,20 @@ public class Shorting_Menu {
                     arr[j]=arr[j-1];
                     arr[j-1]=temp;
                 }
-
             }
+        }
+    }
+//    ----------------------------------------------------------------------------------
+//    Insertion Sort
+    public static void insertionSort(int[] arr) {
+        for (int i = 1; i < arr.length ; i++) {
+            int temp = arr[i];
+            int j = i - 1;
+            while (j >= 0 && arr[j] > temp) {
+                arr[j + 1] = arr[j];
+                j--;
+            }
+            arr[j + 1] = temp;
         }
     }
 }
