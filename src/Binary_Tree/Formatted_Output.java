@@ -13,12 +13,6 @@ class BinaryNode2
 public class Formatted_Output {
         public static void  Print(BinaryNode2 root)
         {
-//        if(root==null)
-//            return;
-//        System.out.println(root.data);
-//        Print(root.left);
-//        Print(root.right);
-
             if(root==null)
                 return;
             System.out.print(root.data+"->");
