@@ -10,7 +10,6 @@ class BinaryNode2
         this.data=data;
     }
 }
-
 public class Formatted_Output {
         public static void  Print(BinaryNode2 root)
         {
