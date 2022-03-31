@@ -1,9 +1,16 @@
 package Binary_Tree;
+/* Without using the generics Node class
+ class BinaryNode{
+    int data;
+    Node left ;
+    Node Right;
+    }// this is the Node class without using the generics
+*/
+
 class BinaryNode<T>{
     T data;
     BinaryNode <T>  left;
     BinaryNode <T> right;
-
     public BinaryNode(T data) {
         this.data = data;
     }
