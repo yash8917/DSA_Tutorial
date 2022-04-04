@@ -120,7 +120,9 @@ public class Binary_Search_Tree {
     public static void main(String[] args) {
        BinaryNode4 root= insert(null,new BinaryNode4(67));
        BinaryNode4 rleft=insert(root,new BinaryNode4(64));
+       BinaryNode4 rright=insert(root,new BinaryNode4(70));
        print(root);
+        System.out.println(checkBST(root));
     }
 
 }
