@@ -37,10 +37,11 @@ public class Formatted_Output {
             BinaryNode2 root=new BinaryNode2(15);
             BinaryNode2 onel=new BinaryNode2(16);
             BinaryNode2 oner=new BinaryNode2(20);
-            root.right=oner;
-            root.left=onel;
+
             BinaryNode2 onelr=new BinaryNode2(18);
             BinaryNode2 onerl=new BinaryNode2(60);
+            root.right=oner;
+            root.left=onel;
             onel.right=onelr;
             oner.left=onerl;
             Print(root);
