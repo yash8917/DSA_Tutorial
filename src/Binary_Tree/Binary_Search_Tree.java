@@ -105,7 +105,18 @@ public class Binary_Search_Tree {
            return false;
        }
    }
-
+   public static int maximum(BinaryNode4 root){
+       if (root == null){
+           return Integer.MAX_VALUE;
+       }
+       return Math.min(root.data,Math.max(maximum(root.left),maximum(root.right)));
+   }
+    public static int minimum(BinaryNode4 root){
+        if (root == null){
+            return Integer.MIN_VALUE;
+        }
+        return Math.max(root.data,Math.min(maximum(root.left),minimum(root.right)));
+    }
     public static void main(String[] args) {
        BinaryNode4 root= insert(null,new BinaryNode4(67));
        BinaryNode4 rleft=insert(root,new BinaryNode4(64));
