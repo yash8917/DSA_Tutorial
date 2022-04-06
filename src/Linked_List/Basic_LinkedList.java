@@ -23,7 +23,7 @@ public class Basic_LinkedList {
         return n1;
     }
     public static void display(Node temp){
-        System.out.println("The values of Linked List is: ");
+        System.out.println("The values of Linked List is:->");
         System.out.println(temp.data);
         System.out.println(temp.next.data);
         System.out.println(temp.next.next.data);
