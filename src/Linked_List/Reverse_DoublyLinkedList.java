@@ -74,7 +74,7 @@ class LinkedList {
         list.printList(head);
         head = list.reverse(head);
         System.out.println("");
-        System.out.println("Reversed linked list ");
+        System.out.println("Reversed linked list: ");
         list.printList(head);
     }
 }
