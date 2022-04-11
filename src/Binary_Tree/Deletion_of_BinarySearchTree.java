@@ -83,7 +83,6 @@ class BinarySearchTree {
     insert a new key in BST */
     Node insertRec(Node root, int key)
     {
-
 		/* If the tree is empty,
 		return a new node */
         if (root == null) {
