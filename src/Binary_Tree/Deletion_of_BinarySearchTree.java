@@ -133,8 +133,7 @@ class BinarySearchTree {
         tree.insert(60);
         tree.insert(80);
 
-        System.out.println(
-                "Inorder traversal of the given tree");
+        System.out.println("Inorder traversal of the given tree");
         tree.inorder();
 
         System.out.println("\nDelete 20");
