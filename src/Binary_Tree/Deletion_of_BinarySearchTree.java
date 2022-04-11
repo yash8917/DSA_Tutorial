@@ -151,8 +151,7 @@ class BinarySearchTree {
 
         System.out.println("\nDelete 50");
         tree.deleteKey(50);
-        System.out.println(
-                "Inorder traversal of the modified tree");
+        System.out.println("Inorder traversal of the modified tree");
         tree.inorder();
     }
 }
