@@ -36,6 +36,8 @@ public class Binary_Search_Tree {
      }
      return root;
  }
+
+ // Insertion Without Recurtioon
  public static BinaryNode4 insertWithoutRecurtion(int value ){
      BinaryNode4 newNode=new BinaryNode4(value);
      if (root == null){
@@ -89,7 +91,7 @@ public class Binary_Search_Tree {
        int leftMax=maximum(root);
        int rightMin=minimum(root);
        if (root == null){
-           return false;
+           return true;
        }
        if (root.data < leftMax){
            return false;
@@ -123,6 +125,7 @@ public class Binary_Search_Tree {
        BinaryNode4 rright=insert(root,new BinaryNode4(70));
        print(root);
         System.out.println(checkBST(root));
+
     }
 
 }
