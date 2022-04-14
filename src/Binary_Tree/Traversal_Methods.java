@@ -17,12 +17,15 @@ public class Traversal_Methods {
         Root.right=Rootright;
         BinaryNode3 leftl=new BinaryNode3(3);
         BinaryNode3 leftr=new BinaryNode3(8);
-        Root.left=leftl;
-        Root.right=leftr;
+        RootLeft.left=leftl;
+        RootLeft.right=leftr;
+        System.out.print("1.Pre Order Traversal:-> ");
         preOrder(Root);
         System.out.println();
+        System.out.print("2.In Order Traversal:-> ");
         inOrder(Root);
         System.out.println();
+        System.out.print("3.Post Order Traversal:-> ");
         postOrder(Root);
     }
 public static void preOrder(BinaryNode3 root){
