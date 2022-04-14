@@ -35,7 +35,12 @@ public static void inOrder(BinaryNode3 root){
         if (root == null)
             return;
         inOrder(root.left);
-        inOrder(root.right);
+    System.out.println(root.data);
+         inOrder(root.right);
+}
+public static void postOrder(BinaryNode3 root){
+       postOrder(root.left);
+       postOrder(root.right);
     System.out.println(root.data);
 }
 }
