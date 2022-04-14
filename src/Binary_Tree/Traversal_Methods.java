@@ -7,7 +7,7 @@ class BinaryNode3{
         this.data=data;
     }
 }
-public class Traversal_PreOrder {
+public class Traversal_Methods {
     public static void main(String[] args) {
         // Creating the Object
         BinaryNode3 Root =new BinaryNode3(10);
@@ -31,5 +31,11 @@ public static void preOrder(BinaryNode3 root){
         preOrder(root.left);
         preOrder(root.right);
 }
-
+public static void inOrder(BinaryNode3 root){
+        if (root == null)
+            return;
+        inOrder(root.left);
+        inOrder(root.right);
+    System.out.println(root.data);
+}
 }
