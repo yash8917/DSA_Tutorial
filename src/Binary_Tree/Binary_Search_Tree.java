@@ -1,4 +1,5 @@
 package Binary_Tree;
+
 class BinaryNode4{
     int data;
     BinaryNode4 left;
@@ -87,44 +88,46 @@ public class Binary_Search_Tree {
            }
            return result;
        }
-       public static boolean checkBST(BinaryNode4 root){
-       int leftMax=maximum(root);
-       int rightMin=minimum(root);
-       if (root == null){
-           return true;
-       }
-       if (root.data < leftMax){
-           return false;
-       }
-       if (root.data >rightMin){
-           return false;
-       }
-       boolean leftBST =checkBST(root.left);
-       boolean rightBST = checkBST(root.right);
-       if (leftBST && rightBST){
-           return true;
-       }else {
-           return false;
-       }
-   }
-   public static int maximum(BinaryNode4 root){
-       if (root == null){
-           return Integer.MAX_VALUE;
-       }
-       return Math.min(root.data,Math.max(maximum(root.left),maximum(root.right)));
-   }
-    public static int minimum(BinaryNode4 root){
-        if (root == null){
-            return Integer.MIN_VALUE;
-        }
-        return Math.max(root.data,Math.min(maximum(root.left),minimum(root.right)));
-    }
+//       public static boolean checkBST(BinaryNode4 root){
+//       int leftMax=maximum(root);
+//       int rightMin=minimum(root);
+//       if (root == null){
+//           return true;
+//       }
+//       if (root.data < leftMax){
+//           return false;
+//       }
+//       if (root.data >rightMin){
+//           return false;
+//       }
+//       boolean leftBST =checkBST(root.left);
+//       boolean rightBST = checkBST(root.right);
+//       if (leftBST && rightBST){
+//           return true;
+//       }else {
+//           return false;
+//       }
+//   }
+//   public static int maximum(BinaryNode4 root){
+//       if (root == null){
+//           return Integer.MAX_VALUE;
+//       }
+//       return Math.min(root.data,Math.max(maximum(root.left),maximum(root.right)));
+//   }
+//    public static int minimum(BinaryNode4 root){
+//        if (root == null){
+//            return Integer.MIN_VALUE;
+//        }
+//        return Math.max(root.data,Math.min(maximum(root.left),minimum(root.right)));
+//    }
     public static void main(String[] args) {
-       BinaryNode4 root= insert(null,new BinaryNode4(67));
+       BinaryNode4 root= insert(null,new BinaryNode4(89));
        BinaryNode4 rleft=insert(root,new BinaryNode4(64));
        BinaryNode4 rright=insert(root,new BinaryNode4(70));
+       root.left=rleft;
+       root.right=rright;
        print(root);
-        System.out.println(checkBST(root));
+//        System.out.println(checkBST(root));
 
     }
 
