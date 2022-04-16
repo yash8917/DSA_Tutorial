@@ -120,6 +120,7 @@ public class Binary_Search_Tree {
 //        }
 //        return Math.max(root.data,Math.min(maximum(root.left),minimum(root.right)));
 //    }
+
     public static void main(String[] args) {
        BinaryNode4 root= insert(null,new BinaryNode4(89));
        BinaryNode4 rleft=insert(root,new BinaryNode4(64));
