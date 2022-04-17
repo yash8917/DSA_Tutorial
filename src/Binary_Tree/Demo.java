@@ -80,6 +80,46 @@ public class Demo {
         postOrder_Travesal(root.Right);
         System.out.print(root.data+" ");
     }
+
+//    Minimum & Maximum Method
+    public static int min(BinaryNode9 root){
+        if(root.Left ==null){
+            return root.data;
+        }
+        return min(root.Left);
+    }
+    public static int max(BinaryNode9 root){
+        if (root.Right == null )
+            return root.data;
+        return max(root.Right);
+    }
+
+//      Deletion of the Node
+    public static BinaryNode9 deleteNode(BinaryNode9 root,int val){
+        if (root == null)
+            return null;
+        else if (val < root.data)
+            root.Left=deleteNode(root.Left,val);
+        else if (val > root.data)
+            root.Right=deleteNode(root.Right,val);
+        else{
+            if (root.Left == null && root.Right == null){
+                return null;
+            }
+            else if (root.Right == null){
+                return root.Left;
+            }
+            else if (root.Left == null){
+                return root.Right;
+            }
+            else{
+                int minimum=min(root);
+                int  maximum=max(root);
+                deleteNode(root.Right,minimum);
+            }
+        }
+        return root;
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         BinaryNode9 root=new BinaryNode9(9);
@@ -112,6 +152,14 @@ public class Demo {
         System.out.print("After insert the value(By using insert Method) our BST is :> ");
         inOrder_Traversal(root);
         System.out.println("(In-Order Traversal)");
+        System.out.println("Maximum in the BST: "+max(root));
+        System.out.println("Minimum in the BST: "+min(root));
+        deleteNode(root,-15);
+        System.out.print("Enter the value you want to delete: ");
+        int del=sc.nextInt();
+        deleteNode(root,del);
+        System.out.print("After delete the Node the BST: ");
+        inOrder_Traversal(root);
         System.out.print("Enter the value What you want to search : ");
         int target=sc.nextInt();
         System.out.println(search(root,target));
