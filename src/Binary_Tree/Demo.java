@@ -1,3 +1,5 @@
+package Binary_Tree;
+
 import java.util.Scanner;
 
 class BinaryNode9 {
