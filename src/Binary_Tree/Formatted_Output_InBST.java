@@ -10,7 +10,7 @@ class BinaryNode2
         this.data=data;
     }
 }
-public class Formatted_Output {
+public class Formatted_Output_InBST {
         public static void  Print(BinaryNode2 root)
         {
             if(root==null)
