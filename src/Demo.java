@@ -9,42 +9,6 @@ class BinaryNode9 {
     }
 }
 public class Demo {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        BinaryNode9 root=new BinaryNode9(9);
-        BinaryNode9 rleft=new BinaryNode9(7);
-        BinaryNode9 rright=new BinaryNode9(12);
-        BinaryNode9 rleftLeft=new BinaryNode9(3);
-        BinaryNode9 rleftRight=new BinaryNode9(8);
-        BinaryNode9 rrightLeft = new BinaryNode9(11);
-        BinaryNode9 rrightRight =new BinaryNode9(13);
-        root.Left=rleft;
-        root.Right=rright;
-        rleft.Left=rleftLeft;
-        rleft.Right=rleftRight;
-        rright.Left=rrightLeft;
-        rright.Right=rrightRight;
-        System.out.print("Inorder Traversal :> ");
-        inOrder_Traversal(root);
-        System.out.println();
-        System.out.print("Preorder Traversal :> ");
-        preOrder_Traversal(root);
-        System.out.println();
-        System.out.print("Postorder Traversal :> ");
-        postOrder_Travesal(root);
-        System.out.println();
-
-//        Calling the insert Method
-        insert(root,new BinaryNode9(15));
-        insert(root,new BinaryNode9(14));
-        insert(root,new BinaryNode9(6));
-        System.out.print("After insert the value(By using insert Method) our BST is :> ");
-        inOrder_Traversal(root);
-        System.out.println("(In-Order Traversal)");
-        System.out.println("Enter the value What you want to search : ");
-        int target=sc.nextInt();
-        System.out.println(search(root,target));
-    }
 
 //    Search Method
     public static boolean search(BinaryNode9 root,int target){
@@ -113,5 +77,41 @@ public class Demo {
         postOrder_Travesal(root.Left);
         postOrder_Travesal(root.Right);
         System.out.print(root.data+" ");
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BinaryNode9 root=new BinaryNode9(9);
+        BinaryNode9 rleft=new BinaryNode9(7);
+        BinaryNode9 rright=new BinaryNode9(12);
+        BinaryNode9 rleftLeft=new BinaryNode9(3);
+        BinaryNode9 rleftRight=new BinaryNode9(8);
+        BinaryNode9 rrightLeft = new BinaryNode9(11);
+        BinaryNode9 rrightRight =new BinaryNode9(13);
+        root.Left=rleft;
+        root.Right=rright;
+        rleft.Left=rleftLeft;
+        rleft.Right=rleftRight;
+        rright.Left=rrightLeft;
+        rright.Right=rrightRight;
+        System.out.print("Inorder Traversal :> ");
+        inOrder_Traversal(root);
+        System.out.println();
+        System.out.print("Preorder Traversal :> ");
+        preOrder_Traversal(root);
+        System.out.println();
+        System.out.print("Postorder Traversal :> ");
+        postOrder_Travesal(root);
+        System.out.println();
+
+//        Calling the insert Method
+        insert(root,new BinaryNode9(15));
+        insert(root,new BinaryNode9(14));
+        insert(root,new BinaryNode9(6));
+        System.out.print("After insert the value(By using insert Method) our BST is :> ");
+        inOrder_Traversal(root);
+        System.out.println("(In-Order Traversal)");
+        System.out.print("Enter the value What you want to search : ");
+        int target=sc.nextInt();
+        System.out.println(search(root,target));
     }
 }
