@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class BinaryNode9 {
     int data;
     BinaryNode9 Left;
@@ -8,6 +10,7 @@ class BinaryNode9 {
 }
 public class Demo {
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
         BinaryNode9 root=new BinaryNode9(9);
         BinaryNode9 rleft=new BinaryNode9(7);
         BinaryNode9 rright=new BinaryNode9(12);
@@ -32,14 +35,30 @@ public class Demo {
         System.out.println();
 
 //        Calling the insert Method
-        insert(root,new BinaryNode9(19));
+        insert(root,new BinaryNode9(15));
         insert(root,new BinaryNode9(14));
         insert(root,new BinaryNode9(6));
-        System.out.println("After insert the value(By using insert Method) our BST is :");
+        System.out.print("After insert the value(By using insert Method) our BST is :> ");
         inOrder_Traversal(root);
         System.out.println("(In-Order Traversal)");
+        System.out.println("Enter the value What you want to search : ");
+        int target=sc.nextInt();
+        System.out.println(search(root,target));
     }
-
+    public static boolean search(BinaryNode9 root,int target){
+        boolean res ;
+        if (root == null)
+            return false;
+        if (root.data == target){
+            return true;
+        }
+        if (target < root.data){
+            res=search(root.Left,target);
+        }else{
+            res=search(root.Right,target);
+        }
+        return res;
+    }
     public static BinaryNode9 insert(BinaryNode9 root,BinaryNode9 newNode){
         if(root == null){
             root =newNode;
