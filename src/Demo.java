@@ -45,6 +45,8 @@ public class Demo {
         int target=sc.nextInt();
         System.out.println(search(root,target));
     }
+
+//    Search Method
     public static boolean search(BinaryNode9 root,int target){
         boolean res ;
         if (root == null)
@@ -59,6 +61,8 @@ public class Demo {
         }
         return res;
     }
+
+//    Insert Method
     public static BinaryNode9 insert(BinaryNode9 root,BinaryNode9 newNode){
         if(root == null){
             root =newNode;
