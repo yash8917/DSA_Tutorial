@@ -29,8 +29,40 @@ public class Demo {
         System.out.println();
         System.out.print("Postorder Traversal :> ");
         postOrder_Travesal(root);
+        System.out.println();
 
+//        Calling the insert Method
+        insert(root,new BinaryNode9(19));
+        insert(root,new BinaryNode9(14));
+        insert(root,new BinaryNode9(6));
+        System.out.println("After insert the value(By using insert Method) our BST is :");
+        inOrder_Traversal(root);
+        System.out.println("(In-Order Traversal)");
     }
+
+    public static BinaryNode9 insert(BinaryNode9 root,BinaryNode9 newNode){
+        if(root == null){
+            root =newNode;
+            return root;
+        }
+        if (root.data > newNode.data){
+            if (root.Left == null){
+                root.Left=newNode;
+            }else{
+                insert(root.Left,newNode);
+            }
+        }
+        if (root.data < newNode.data){
+            if (root.Right == null){
+                root.Right=newNode ;
+            }else{
+                insert(root.Right,newNode);
+            }
+        }
+        return root;
+    }
+
+//    IN - Order Traversal
    public static void inOrder_Traversal(BinaryNode9 root){
         if (root == null){
             return;
@@ -39,6 +71,8 @@ public class Demo {
        System.out.print(root.data+" ");
        inOrder_Traversal(root.Right);
    }
+
+//   Pre - Order Traversal
    public static void preOrder_Traversal(BinaryNode9 root){
         if (root == null){
             return;
@@ -47,6 +81,8 @@ public class Demo {
         preOrder_Traversal(root.Left);
         preOrder_Traversal(root.Right);
     }
+
+//    Post - Order Traversal
     public static void postOrder_Travesal(BinaryNode9 root) {
         if (root == null) {
             return;
