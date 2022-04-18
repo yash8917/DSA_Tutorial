@@ -15,7 +15,7 @@ class BinaryNode<T>{
         this.data = data;
     }
 }
-public class BinaryTree_Structure {
+public class BinaryTree_Structure_LinkedList {
     public static void main(String[] args) {
 
         BinaryNode <Integer> root=new BinaryNode<>(15);
