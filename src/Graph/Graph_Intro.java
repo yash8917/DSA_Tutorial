@@ -11,6 +11,8 @@ public class Graph_Intro {
     public Graph_Intro(){
         obj=new HashMap<>();
     }
+
+//    for add the edges
     public void addEdge(int v1, int v2,boolean biDirectional){
     LinkedList <Integer > v1neighbour =obj.getOrDefault(v1,new LinkedList());
     v1neighbour.add(v2);
