@@ -7,11 +7,10 @@ import java.util.Scanner;
 
 public class Graph_Intro {
 //     we can use the HashMap also
-    Map <Integer, LinkedList<Integer> > obj;
+    Map<Integer ,LinkedList<Integer>>obj;
     public Graph_Intro(){
-        obj= new HashMap<>();
+        obj=new HashMap<>();
     }
-
     public void addEdge(int v1, int v2,boolean biDirectional){
     LinkedList <Integer > v1neighbour =obj.getOrDefault(v1,new LinkedList());
     v1neighbour.add(v2);
