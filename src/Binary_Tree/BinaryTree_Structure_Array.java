@@ -15,6 +15,7 @@ public class BinaryTree_Structure_Array {
         ar[lastUsedIndex +1]= val;
         lastUsedIndex ++;
     }
+
     public void preOrder_Traversal(int index){
         if (index >lastUsedIndex){
             return;
