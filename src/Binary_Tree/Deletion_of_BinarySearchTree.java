@@ -23,6 +23,7 @@ class BinarySearchTree {
 
     // Root of BST
     Node root;
+
     // Constructor
     BinarySearchTree() { root = null; }
 
