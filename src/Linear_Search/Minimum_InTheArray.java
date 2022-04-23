@@ -10,7 +10,6 @@ public class Minimum_InTheArray {
         }
         return minval;
     }
-
     public static void main(String[] args) {
         int[] arr={12,23,54,4,-2,-34};
         System.out.println(min(arr));
