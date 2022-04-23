@@ -5,6 +5,7 @@ package Binary_Tree;
 class Deletion_of_BinarySearchTree{
 
 }
+
 class BinarySearchTree {
     /* Class containing left
     and right child of current node
