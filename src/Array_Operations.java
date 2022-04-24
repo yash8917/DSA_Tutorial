@@ -67,7 +67,6 @@ public class Array_Operations
         System.out.println("value not found.");
     }
 
-
     //method to delete the value of an array
     public void delete(int index)
     {
