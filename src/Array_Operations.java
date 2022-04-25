@@ -78,7 +78,6 @@ public class Array_Operations
            System.out.println("Invalid Index");
        }
     }
-
     //method to delete the array
     public void deleteArray()
     {
