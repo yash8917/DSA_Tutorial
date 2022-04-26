@@ -1,5 +1,6 @@
 package Linked_List;
 //Structure of the Doubly Linked List
+
 class Node2{
     int data;
     Node2 next;
