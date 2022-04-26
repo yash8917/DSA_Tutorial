@@ -16,6 +16,7 @@ public class IO_Doubly_LinkedList {
         Node2 head=createLinkedList();
         display(head);
     }
+
     public static Node2 createLinkedList(){
         Node2 newnode1=new Node2(10);
         Node2 newnode2=new Node2(20);
