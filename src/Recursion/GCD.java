@@ -18,6 +18,7 @@ public class GCD {
         int num2 = sc.nextInt();
         System.out.println("GCD of the NUmbers "+num1+" and "+num2+" is:"+findgcd(num1,num2));
     }
+
     public static int findgcd(int num1, int num2)
     {
         //------------Base condition
