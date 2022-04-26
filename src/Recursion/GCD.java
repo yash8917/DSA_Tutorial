@@ -5,6 +5,7 @@ import java.util.Scanner;
 /*
 Java program to demonstrate How to find Greatest Common Divisor or GCD of * two numbers using Euclid’s method.
  */
+
 public class GCD {
     public static void main(String args[]) {
 
