@@ -7,7 +7,6 @@ Java program to demonstrate How to find Greatest Common Divisor or GCD of * two 
  */
 
 public class GCD {
-
     public static void main(String args[]) {
 
         //Enter two number whose GCD needs to be calculated.
