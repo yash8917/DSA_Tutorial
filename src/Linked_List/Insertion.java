@@ -22,6 +22,7 @@ public class Insertion {
         temp=n1;
         return n1;
     }
+
     public static void display(Node6 ans){
         //Check point
         if (head == null){
