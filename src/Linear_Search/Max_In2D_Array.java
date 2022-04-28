@@ -13,6 +13,7 @@ public class Max_In2D_Array {
         int res=max(arr);
         System.out.println(res);
     }
+
     static int max(int[][] arr){
         int maxval=Integer.MIN_VALUE;
         for (int row = 0; row < arr.length; row++) {
