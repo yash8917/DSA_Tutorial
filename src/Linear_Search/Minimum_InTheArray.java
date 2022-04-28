@@ -1,6 +1,7 @@
 package Linear_Search;
 
 public class Minimum_InTheArray {
+
     static int min(int[] arr){
         int minval=arr[0];
         for (int i = 0; i < arr.length; i++) {
